@@ -7,5 +7,6 @@ class Berita(BaseModel):
     link : str
     category : str 
     website : str
+    content : str
 
 

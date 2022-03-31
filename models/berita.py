@@ -1,13 +1,14 @@
 from sqlalchemy import Table,Column
-from sqlalchemy.sql.sqltypes import String
+from sqlalchemy.sql.sqltypes import String,Text
 from config.db import meta
 
 list_berita = Table(
     'berita', meta,
-    Column('title',String(255)),
-    Column('date',String(255)),
-    Column('author',String(255)),
-    Column('link',String(255)),
-    Column('category',String(255)),
-    Column('website',String(255))
+    Column('title',String()),
+    Column('date',String()),
+    Column('author',String()),
+    Column('link',String()),
+    Column('category',String()),
+    Column('website',String()),
+    Column('content',String())
 )
