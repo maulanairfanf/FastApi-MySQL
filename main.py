@@ -5,5 +5,5 @@ app = FastAPI()
 # app.include_router(berita)
 
 @app.get("/")
-def home():
-    return {"message":"Hello World"}
+async def root():
+    return {"message" : "Hello from world"}
